@@ -19,7 +19,6 @@ class CmdSetForm implements Form{
         if($data[0] === "") return;
 
  
-  var_dump($data[0]);
        $item = Item::get(280, 0, 1);
        $item->setLore(["§a{$data[0]}のコマンドを実行できる棒です"]);
                $nbt = $item->getNamedTag();
